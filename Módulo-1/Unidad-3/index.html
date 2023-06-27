@@ -4,36 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .subrayado {
+            text-decoration: underline;
+        }
+
+        .border {
+            border-radius: 2rem;
+        }
+    </style>
     <title>Fullstack-UTN</title>
 </head>
 
-<body style="background-color: #09a7d1">
+<body style="background-color: #69C16F">
     <div>
         <header style="text-align: center;">
-            <h1 style="color: #0740a5;">
+            <h1 class="subrayado" style="color: #245a4b;">
                 Tarea Unidad 3 HTML
             </h1>
-            <H2 style="font-size: 35px;">Pablo Romero</H2>
+            <H2 style="font-size: 35px; color: #515760;">Pablo Romero</H2>
         </header>
-        <section style="text-align: center; background-color: #0beae7; padding:15px;">
-            <img src="/Módulo-1/Unidad-3/imagenes/WhatsApp Image 2023-06-26 at 19.53.22.jpeg" alt="imagen principal" width="50%">
-        </section>
+        <div class="border" style="margin: 0 auto; background-color: #D6EC8Ee9; padding: 15px; text-align: center; width: 50%;">
+            <img class="border" src="/Módulo-1/Unidad-3/imagenes/WhatsApp Image 2023-06-26 at 19.53.22.jpeg" alt="imagen principal" style="width: 100%;">
+        </div>
         <br>
         <section style="margin-left: 40px; font-size: 25px;">
-            <p>Edad: <small>41 años</small><p/>                
-            <p>Domicilio: <small>Alem 2100 Avellaneda-Dock Sud</small></p>    
-            <p>Las series que mas me gustan son:</p>
+            <span class="subrayado">Edad:</span> <span style="white-space: nowrap;">41 años</span>
+            <br>
+            <br>
+            <span class="subrayado">Domicilio:</span> <span style="white-space: nowrap;">Alem 2100 Avellaneda-Dock Sud</span>
+            </p>
+            <p class="subrayado">Las series que mas me gustan son:</p>
             <ul>
                 <li>Stranger things</li>
                 <li>The walking dead</li>
                 <li>Breaking bad</li>
             </ul>
-            <p>Las peliculas que mas me gustaron son:</p>
+            <p class="subrayado">Las peliculas que mas me gustaron son:</p>
             <ul>
                 <li>En busca de la felicidad</li>
+                <li>Hombre en llamas</li>
+                <li>Historias cruzadas</li>
             </ul>
+            <p class="subrayado">Perfil</p>
+            <p>Trabajador en relación de dependencia</p>
 
         </section>
     </div>
 </body>
+
 </html>
