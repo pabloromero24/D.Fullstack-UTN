@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .subrayado {
-            text-decoration: underline;
-        }
-
+    <style>        
         .border {
             border-radius: 2rem;
         }
-    </style>
+    </style>    
     <title>Fullstack-UTN</title>
 </head>
 
-<body style="background-color: #69C16F">
+<body style="background-color: rgb(79, 141, 76);
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));">
     <div>
         <header style="text-align: center;">
-            <h1 class="subrayado" style="color: #245a4b;">
-                Tarea Unidad 3 HTML
-            </h1>
-            <H2 style="font-size: 35px; color: #515760;">Pablo Romero</H2>
+            <div>
+                <h1 style="color: #245a4b;"><u>Tarea Unidad 3 HTML</u></h1>
+                <h2 style="font-size: 35px; color: #515760;">Pablo Romero</h2>
+            </div>
         </header>
-        <div class="border" style="margin: 0 auto; background-color: #D6EC8Ee9; padding: 15px; text-align: center; width: 50%;">
-            <img class="border" src="/Módulo-1/Unidad-3/imagenes/WhatsApp Image 2023-06-26 at 19.53.22.jpeg" alt="imagen principal" style="width: 100%;">
-        </div>
+        <section>
+            <div class="border"
+                style="margin: 0 auto; background-color: #D6EC8Ee9; padding: 15px; text-align: center; width: 50%; box-shadow: 10px 10px 10px grey;">
+                <img class="border" src="/Módulo-1/Unidad-3/imagenes/WhatsApp Image 2023-06-26 at 19.53.22.jpeg"
+                    alt="imagen principal" style="width: 100%;">
+            </div>
+        </section>
         <br>
         <section style="margin-left: 40px; font-size: 25px;">
-            <span class="subrayado">Edad:</span> <span style="white-space: nowrap;">41 años</span>
-            <br>
-            <br>
-            <span class="subrayado">Domicilio:</span> <span style="white-space: nowrap;">Alem 2100 Avellaneda-Dock Sud</span>
-            </p>
-            <p class="subrayado">Las series que mas me gustan son:</p>
+            <p><u>Edad:</u> 41 años</p>               
+            <p><u>Domicilio:</u> Alem 2100 Avellaneda-Dock Sud</p>           
+            <p><u>Las series que mas me gustan son:</u></p>
             <ul>
                 <li>Stranger things</li>
                 <li>The walking dead</li>
                 <li>Breaking bad</li>
             </ul>
-            <p class="subrayado">Las peliculas que mas me gustaron son:</p>
+            <p><u>Las peliculas que mas me gustaron son:</u></p>
             <ul>
                 <li>En busca de la felicidad</li>
                 <li>Hombre en llamas</li>
                 <li>Historias cruzadas</li>
             </ul>
-            <p class="subrayado">Perfil</p>
-            <p>Trabajador en relación de dependencia</p>
+            <p><u>Perfil</u></p>
+            <p>Trabajo en relación de dependencia en un casino</p>
+            <p>Realizé varios cursos que me permitieron adquirir conocimientos básicos en HTML-CSS-JAVASCRIPT y todo lo aplicado al desarrollo web</p>
+            <p>Disfruto mucho el tiempo que puedo pasar con mi familia, salir a pasear y despejar un poco la cabeza de la rutina</p>
+            <p>No me gustan los espacios muy concurridos</p>
 
+            <p>Si quieres contactarme puedes visitar mi <a href="#" style="text-decoration: none;">página</a> o completa el siguiente formulario y me comunicaré contigo a la brevedad</p>
+
+            <form>
+                <p>
+                    <label for="nombre"><u>Nombre:</u></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+                </p>                
+                <p>
+                    <label for="nombre"><u>Apellido:</u></label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido...">
+                </p>                
+                <p>
+                    <label for="email"><u>Email:</u></label>
+                    <input type="email" id="email" name="email" placeholder="Email...">
+                </p>                
+                
+                <p>
+                    <label for="telefono"><u>Teléfono</u>:</label>
+                    <input type="tel" name="telefono" placeholder="Teléfono...">
+                </p>
+                <p>
+                    <label for="comentarios"><u>Comentarios</u></label>
+                    <textarea name="comentarios" cols="30" rows="5"></textarea>
+                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="limpiar formulario"/>
+              </form>
         </section>
     </div>
 </body>
