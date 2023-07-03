@@ -1,83 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>        
-        .border {
-            border-radius: 2rem;
-        }
-    </style>    
+    <link rel="stylesheet" href="/Unidad-4/styles.css">
     <title>Fullstack-UTN</title>
 </head>
 
-<body style="background-color: rgb(79, 141, 76);
-background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));">
-    <div>
-        <header style="text-align: center;">
+<body>
+    <header>
+        <div>
             <div>
-                <h1 style="color: #245a4b;"><u>Tarea Unidad 3 HTML</u></h1>
-                <h2 style="font-size: 35px; color: #515760;">Pablo Romero</h2>
+                <h1>Tarea Unidad 3 HTML</h1>
+                <h2>Pablo Romero</h2>
             </div>
-        </header>
+        </div>
+    </header>
+    <main class="contenedor">
         <section>
-            <div class="border"
-                style="margin: 0 auto; background-color: #D6EC8Ee9; padding: 15px; text-align: center; width: 50%; box-shadow: 10px 10px 10px grey;">
-                <img class="border" src="/Módulo-1/Unidad-3/imagenes/WhatsApp Image 2023-06-26 at 19.53.22.jpeg"
-                    alt="imagen principal" style="width: 100%;">
+            <div id="contenedor-imagen">
+                <img src="/Unidad-3/imagenes/WhatsApp Image 2023-06-26 at 19.53.22.jpeg" alt="imagen principal">
             </div>
         </section>
         <br>
-        <section style="margin-left: 40px; font-size: 25px;">
-            <p><u>Edad:</u> 41 años</p>               
-            <p><u>Domicilio:</u> Alem 2100 Avellaneda-Dock Sud</p>           
-            <p><u>Las series que mas me gustan son:</u></p>
-            <ul>
-                <li>Stranger things</li>
-                <li>The walking dead</li>
-                <li>Breaking bad</li>
-            </ul>
-            <p><u>Las peliculas que mas me gustaron son:</u></p>
-            <ul>
-                <li>En busca de la felicidad</li>
-                <li>Hombre en llamas</li>
-                <li>Historias cruzadas</li>
-            </ul>
-            <p><u>Perfil</u></p>
-            <p>Trabajo en relación de dependencia en un casino</p>
-            <p>Realizé varios cursos que me permitieron adquirir conocimientos básicos en HTML-CSS-JAVASCRIPT y todo lo aplicado al desarrollo web</p>
-            <p>Disfruto mucho el tiempo que puedo pasar con mi familia, salir a pasear y despejar un poco la cabeza de la rutina</p>
-            <p>No me gustan los espacios muy concurridos</p>
-
-            <p>Si quieres contactarme puedes visitar mi <a href="#" style="text-decoration: none;">página</a> o completa el siguiente formulario y me comunicaré contigo a la brevedad</p>
-
-            <form>
-                <p>
-                    <label for="nombre"><u>Nombre:</u></label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
-                </p>                
-                <p>
-                    <label for="nombre"><u>Apellido:</u></label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido...">
-                </p>                
-                <p>
-                    <label for="email"><u>Email:</u></label>
-                    <input type="email" id="email" name="email" placeholder="Email...">
-                </p>                
-                
-                <p>
-                    <label for="telefono"><u>Teléfono</u>:</label>
-                    <input type="tel" name="telefono" placeholder="Teléfono...">
-                </p>
-                <p>
-                    <label for="comentarios"><u>Comentarios</u></label>
-                    <textarea name="comentarios" cols="30" rows="5"></textarea>
-                </p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="limpiar formulario"/>
-              </form>
+        <section>
+            <div class="info">
+                <div>
+                    <span class="label">Edad:</span>
+                    <span>41 años</span>
+                </div>
+                <br>
+                <div>
+                    <span class="label">Domicilio:</span>
+                    <span> Alem 2100 Avellaneda-Dock Sud</span>
+                </div>
+                <br>
+                <div>
+                    <span class="label">Las series que mas me gustan son:</span>
+                    <ul>
+                        <li>Stranger things</li>
+                        <li>The walking dead</li>
+                        <li>Breaking bad</li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <span class="label">Las peliculas que mas me gustaron son:</span>
+                    <ul>
+                        <li>En busca de la felicidad</li>
+                        <li>Hombre en llamas</li>
+                        <li>Historias cruzadas</li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <span class="label">Perfil</span>
+                    <p>Trabajo en relación de dependencia en un casino</p>
+                    <p>Realizé varios cursos que me permitieron adquirir conocimientos básicos en HTML-CSS-JAVASCRIPT y
+                        todo lo aplicado al desarrollo web</p>
+                    <p>Disfruto mucho el tiempo que puedo pasar con mi familia, salir a pasear y despejar un poco la
+                        cabeza de la rutina</p>
+                    <p>No me gustan los espacios muy concurridos</p>
+                    <p>Si quieres contactarme puedes visitar mi <a href="#">página</a> o completa
+                        el siguiente formulario y me comunicaré contigo a la brevedad</p>
+                </div>
+            </div>
         </section>
-    </div>
+        <br>
+        <section>
+            <div class="formularios">
+                <form>
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+                    </p>
+                    <p>
+                        <label for="nombre">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido...">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email...">
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefono" placeholder="Teléfono...">
+                    </p>
+                    <p>
+                        <label for="comentarios">Comentarios</label>
+                        <textarea name="comentarios" cols="25" rows="5"></textarea>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar formulario" />
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

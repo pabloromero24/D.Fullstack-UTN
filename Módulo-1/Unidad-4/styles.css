@@ -1,0 +1,141 @@
+:root{
+    --primario:rgb(79, 141, 76);
+    --secundario:#D6EC8Ee9;
+
+    --fuentePrincipal: Arial, Helvetica, sans-serif;
+}
+
+/** Globales **/
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    font-family: var(--fuentePrincipal);    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--primario);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+} 
+
+/** Header **/
+
+header {
+    text-align: center;
+}
+
+h1{
+    color: #245a4b;
+    text-decoration:underline;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 27px;  
+    color: #515760;
+}
+
+.label {
+    text-decoration: underline;
+    display: inline-block;
+  }  
+
+  /** Main **/
+
+#contenedor-imagen{
+    margin: 0 auto;  
+    width: 35%;        
+    background-color: var(--secundario); 
+    padding: 15px; 
+    text-align: center; 
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 2rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 2rem;
+    transition: 0.6s;
+}
+
+img:hover{
+    transform: scale(115%);
+}
+
+.info {
+    margin-top: 3rem;    
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.formularios{    
+    font-size: 25px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    margin: 1rem;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--secundario);
+    transition: 0.5s;    
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color:var(--primario);
+    font-size:17px;
+    color: white;
+    border-radius: 10px;
+}
+
+/** Media Query para el Responsive  **/
+
+@media (max-width: 768px) {
+    #contenedor-imagen{
+        width: 90%;
+    }    
+    .contenedor{
+        overflow-x: hidden;
+        width: 100%; 
+        margin: 0 auto;       
+        padding: 2rem;
+    }
+    .formularios{
+        width: 90%;
+    }
+    textarea{
+        width: 100%;
+    }    
+}
+@media (max-width: 650px) {
+    .formularios input{
+        width: 100%;
+    }
+    input[type="submit"],
+    input[type="reset"]{
+        width: 50%;
+        display: block;
+        margin: 0 auto 1rem;
+    }    
+}
+
+@media (max-width: 320px) {
+    .formularios input{
+        width: 100%;
+    }    
+}
+
