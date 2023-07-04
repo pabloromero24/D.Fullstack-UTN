@@ -1,11 +1,10 @@
+/** Globales **/
 :root{
     --primario:rgb(79, 141, 76);
     --secundario:#D6EC8Ee9;
 
     --fuentePrincipal: Arial, Helvetica, sans-serif;
 }
-
-/** Globales **/
 
 .contenedor{
     max-width: 120rem;
