@@ -5,44 +5,17 @@ html{
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
-#header{    
-    background-color: #FFF159;   
+.navbar{
+    background-color: #FFF159;
 }
 
-.navbar input::placeholder {
-    color: rgba(177, 164, 164, 0.9); 
-    font-size: 1vw;   
+.ul-nav{
+    color: white;
 }
 
-#btn-post{
-    border: none;
-    box-sizing: border-box;
+.menu{    
+    background-color: #333;
 }
-
-#btn-post span:first-child {
-    display: block;    
-  }
-  
-  #btn-post svg {
-    position: relative;
-    top: -10px;
-    height: 20px; 
-    width: 20px;
-  }
-
-#btn-post:hover {
-    border: 1px solid rgb(185, 176, 176);       
-}
-
-/* #menu-d:first-child li{    
-    list-style: none;
-    margin-right: 5px;
-} */
-
-/* #menu-d li:hover > ul{
-    display: block;
-} */
 
 .dropdown-item{
     color: white;
@@ -50,43 +23,17 @@ html{
 
 .dropdown-item:hover{
     color: white;
-    background-color: #3483FA;
+    background-color:#3483FA;
 }
 
-#menu{    
-    background-color: #333;
+.img-fluid{
+    width: 20rem;
+    height: 15rem;    
+    background-color: #c0d4f1;
+    transition: 0.9s;
 }
 
-#icon-cart{   
-    line-height: 18px;
+.img-fluid:hover{
+    background-color: #6083b7;
+    transform: scale(1.1);
 }
-
-#icon-cart svg{     
-    width: 27px;      
-    height: 20px;
-}
-
-@media (max-width: 900px) {
-    .navbar input::placeholder{
-        font-size: 1.9vw;
-    }
-}
-
-@media (max-width:767px) {
-    .navbar input::placeholder{
-        font-size: 4vw;
-    }
-        
-}
-
-
-
-
-
-
-
-
-
-
-
-

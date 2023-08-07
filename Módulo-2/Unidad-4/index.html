@@ -12,124 +12,109 @@
 </head>
 
 <body>
-    <header>
-        <div id="header" class="container-fluid d-flex p-3">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-2 col-sm-12">
-                        <img class="img-logo img-fluid mt-2"
-                            src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.22.13/mercadolibre/logo__large_plus.png"
-                            alt="logo">
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <nav class="navbar bg-body-tertiary rounded-1 h-75 mt-0 shadow">
-                            <div class="container-fluid">
-                                <form class="d-flex w-100" role="search">
-                                    <input class="form-control me-2 border border-0 mb-3" type="search"
-                                        placeholder="Buscar productos, marcas y mas..." aria-label="Search">
-                                    <a href="https://www.mercadolibre.com.ar/" class="btn border border-0 mb-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path
-                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                        </svg>
-                                    </a>
-
-                                </form>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <img class="img-promo img-fluid"
-                            src="https://http2.mlstatic.com/D_NQ_957153-MLA69318147677_052023-OO.webp"
-                            alt="imagen-promo">
-                    </div>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg p-2">
+                <div class="container-fluid">
+                  <img src="./imagenes/logo__large_plus.png" alt="logo">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse ul-nav mx-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorias
+                        </a>
+                        <ul class="dropdown-menu menu">
+                            <li><a class="dropdown-item" href="#">Vehiculos</a></li>
+                            <li><a class="dropdown-item" href="#">Inmuebles</a></li>
+                            <li><a class="dropdown-item" href="#">Supermercado</a></li>
+                            <li><a class="dropdown-item" href="#">Tecnología</a></li>
+                            <li><a class="dropdown-item" href="#">Hogar y Muebles</a></li>
+                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                            <li><a class="dropdown-item" href="#">Herramientas</a></li>
+                            <li><a class="dropdown-item" href="#">Construcción</a></li>
+                            <li><a class="dropdown-item" href="#">Deportes y Fitness</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios para Vehiculos</a></li>
+                            <li><a class="dropdown-item" href="#">Moda</a></li>
+                            <li><a class="dropdown-item" href="#">Juegos y Juguetes</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Vender</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ayuda</a>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
+                      <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                    </form>
+                  </div>
                 </div>
-                <div>
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid">
-                            <button id="btn-post" type="button" class="btn"
-                                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
-                                data-bs-toggle="button" aria-pressed="true">
-                                <span style="display: block;">Enviar a</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-geo-alt" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
-                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                </svg>
-                                <span>Capital Federal</span>
-                            </button>
-                            <div class="collapse navbar-collapse ms-5" id="navbarText">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Categorias
-                                        </a>
-                                        <ul id="menu" class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Vehiculos</a></li>
-                                            <li><a class="dropdown-item" href="#">Inmuebles</a></li>
-                                            <li><a class="dropdown-item" href="#">Supermercado</a></li>
-                                            <li><a class="dropdown-item" href="#">Tecnología</a></li>
-                                            <li><a class="dropdown-item" href="#">Hogar y Muebles</a></li>
-                                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
-                                            <li><a class="dropdown-item" href="#">Herramientas</a></li>
-                                            <li><a class="dropdown-item" href="#">Construcción</a></li>
-                                            <li><a class="dropdown-item" href="#">Deportes y Fitness</a></li>
-                                            <li><a class="dropdown-item" href="#">Accesorios para Vehiculos</a></li>
-                                            <li><a class="dropdown-item" href="#">Moda</a></li>
-                                            <li><a class="dropdown-item" href="#">Juegos y Juguetes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Ofertas</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Historial</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Supermercado</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Moda</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Vender</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Ayuda</a>
-                                    </li>
-                                </ul>
-                                <span>
-                                    <div class="collapse navbar-collapse" id="navbarText">
-                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Creá tu Cuenta</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Ingresá</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Mis Compras</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a id="icon-cart" class="nav-link" href="#"><svg
-                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                                                    </svg></a>
-                                            </li>
-                                        </ul>
-                                </span>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+              </nav>
+        </header>
+        <main>            
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./imagenes/D_NQ_606235-MLA70780217843_072023-OO.webp" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/D_NQ_666406-MLA70795242941_072023-OO.webp" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/D_NQ_661970-MLA70780198119_072023-OO.webp" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/D_NQ_654082-MLA70734200876_072023-OO.webp" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/D_NQ_821534-MLA70785447762_082023-OO.webp" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="row row-cols-4 m-4 justify-content-center gap-4">                     
+                          <img src="./imagenes/lenovo-laptops-thinkbook-16-gen-4-intel-hero.webp" class="img-fluid" alt="...">
+                          <img src="./imagenes/750_750-SM-A235MZKEARO-6.png" class="img-fluid" alt="...">
+                          <img src="./imagenes/lenovo-laptops-thinkbook-16-gen-4-intel-hero.webp" class="img-fluid" alt="...">
+                          <img src="./imagenes/750_750-SM-A235MZKEARO-6.png" class="img-fluid" alt="...">
+                          <img src="./imagenes/lenovo-laptops-thinkbook-16-gen-4-intel-hero.webp" class="img-fluid" alt="...">
+                          <img src="./imagenes/750_750-SM-A235MZKEARO-6.png" class="img-fluid" alt="...">
+                          <img src="./imagenes/lenovo-laptops-thinkbook-16-gen-4-intel-hero.webp" class="img-fluid" alt="...">
+                          <img src="./imagenes/750_750-SM-A235MZKEARO-6.png" class="img-fluid" alt="...">
+                          <img src="./imagenes/lenovo-laptops-thinkbook-16-gen-4-intel-hero.webp" class="img-fluid" alt="...">
+                          <img src="./imagenes/750_750-SM-A235MZKEARO-6.png" class="img-fluid" alt="...">
+                          <img src="./imagenes/lenovo-laptops-thinkbook-16-gen-4-intel-hero.webp" class="img-fluid" alt="...">
+                          <img src="./imagenes/750_750-SM-A235MZKEARO-6.png" class="img-fluid" alt="...">
+                          <img src="./imagenes/lenovo-laptops-thinkbook-16-gen-4-intel-hero.webp" class="img-fluid" alt="...">
+                          <img src="./imagenes/750_750-SM-A235MZKEARO-6.png" class="img-fluid" alt="...">
+                          <img src="./imagenes/lenovo-laptops-thinkbook-16-gen-4-intel-hero.webp" class="img-fluid" alt="...">
+                          <img src="./imagenes/750_750-SM-A235MZKEARO-6.png" class="img-fluid" alt="...">                      
+                  </div>            
+        </main>        
+    </div>    
     <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
