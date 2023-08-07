@@ -5,6 +5,11 @@ html{
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+.contenedor{
+    background-color: #EBEBEB;
+} 
+
 .navbar{
     background-color: #FFF159;
 }
@@ -26,14 +31,22 @@ html{
     background-color:#3483FA;
 }
 
-.img-fluid{
-    width: 20rem;
-    height: 15rem;    
-    background-color: #c0d4f1;
-    transition: 0.9s;
+.lav{
+    width: 10rem;
 }
 
-.img-fluid:hover{
-    background-color: #6083b7;
+.card{    
+    background-color: #FFFFFF;
+    box-shadow:0px 5px 15px 0px rgb(202, 199, 199);
+    transition: 0.4s;
+}
+
+.card:hover{    
     transform: scale(1.1);
+    box-shadow:0px 5px 15px 0px gray;
+}
+
+.card p:nth-child(2),
+ small{
+    color: #00a650;
 }
