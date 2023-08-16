@@ -1,0 +1,172 @@
+:root{
+    --fondo: #D0F5BE;
+    --texto: #547B8C;
+    --Primario:#FBFFDC;
+    --Secundario:#FFAC4F;
+
+    --fuentePrincipal: 'Barriecito', cursive;   
+    }
+
+/** Globales **/
+
+html {
+     box-sizing: border-box;
+     font-size: 62.5%;      
+ }
+    
+ *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {    
+    background-color: var(--fondo);    
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+}
+a {
+    text-decoration: none;    
+}
+
+/** Header **/
+
+.marca{
+    color: var(--texto);
+}
+
+.navbar-nav a{
+    color: var(--texto) !important;
+    letter-spacing: 1px;
+}
+
+.contenedor{
+    background-color: var(--Primario);       
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+}
+
+.carousel-caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--texto);
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 15px;    
+}
+
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;    
+    left: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0,0,0, 0.4));     
+    z-index: 1;
+}
+
+.menu{    
+    background-color: #333;
+}
+
+.dropdown-item{
+    font-size:x-large;      
+}
+
+.dropdown-item:hover{
+    color: #333 !important;
+    background-color:#98EECC;
+}
+
+.logo{
+    width: 10%; 
+    height: 10%; 
+    border: 2px solid #98EECC;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: inline-block;
+    margin-left: 6%;     
+}
+
+.skate-box{
+    width: 100%; 
+    overflow: visible; 
+    position: relative; 
+}
+
+.logo-skate{
+    width: 15%; 
+    height: auto;
+    position: absolute;
+    top: 100%; 
+    transform: translateY(-50%); 
+    margin-top: 3%;    
+}
+
+@media (max-width: 900px) {
+     .logo-skate{
+       display: none;
+    } 
+    .logo{
+        width: 15%;
+        height: 15%;
+    }     
+}
+
+@media (max-width: 480px) {
+    .marca{
+        font-size: large;
+    }
+    .navbar-nav a{
+        font-size: medium;
+    }
+    .logo{
+        width: 20%;
+        height: 20%;
+    }      
+}
+
+
+
+
+    
+    
+
+
