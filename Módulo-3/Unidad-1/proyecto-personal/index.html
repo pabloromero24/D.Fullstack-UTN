@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,9 +17,6 @@
 </head>
 
 <body>
-  
-   
- 
   <header>
     <nav class="contenedor navbar navbar-expand-lg fixed-top">
       <div class="container">
@@ -45,13 +42,13 @@
                 </a>
                 <ul class="dropdown-menu menu">
                   <li><a class="dropdown-item" href="#">Skateboards</a></li>
-                  <li><a class="dropdown-item" href="#">Longboards</a></li>                  
+                  <li><a class="dropdown-item" href="#">Longboards</a></li>
                   <li><a class="dropdown-item" href="#">Remeras</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Galeria</a>
-              </li>             
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contacto</a>
               </li>
@@ -63,21 +60,23 @@
         </div>
       </div>
     </nav>
-  </header>  
-  <main>  
-    <div class="video-carousel-container">
-      <div class="video-container">
-        <div class="ratio ratio-16x9">
-          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="./recursos/videos/skate_-_49791 (540p).mp4" title="" allowfullscreen></video>
+  </header>
+  <main>
+    <div>
+      <div class="video-carousel-container">
+        <div class="video-container">
+          <div class="ratio ratio-16x9">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"
+              src="./recursos/videos/skate_-_49791 (540p).mp4" title="" allowfullscreen></video>
+          </div>
         </div>
-      </div>
         <div class="carousel-container">
-          <div id="carouselExampleCaptions" class="carousel slide">            
+          <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="carousel-caption">
-                  <h5 class="mt-5">Phoenix-Skateboards</h5>
-                  <p class="mt-5 d-lg-block ">Lorem ipsum, dolor sit amet consectetur
+                  <h5 class="mt-5 fw-semibold">Phoenix-Skateboards</h5>
+                  <p class="mt-5 fw-semibold d-lg-block ">Lorem ipsum, dolor sit amet consectetur
                     adipisicing elit. Placeat sapiente deleniti sint corrupti vero
                     ea?</p>
                   <p class="mt-5"><a href="#">Skateboards</a></p>
@@ -85,16 +84,17 @@
               </div>
               <div class="carousel-item">
                 <div class="carousel-caption">
-                  <h5 class="mt-5">Somos fabricantes</h5>
-                  <p class="mt-5 d-lg-block">Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Placeat sapiente deleniti sint corrupti vero Lorem ipsum, dolor sit amet consectetur                    
-                   <p class="mt-5"><a href="#">Longboards</a></p>
+                  <h5 class="mt-5 fw-semibold">Somos fabricantes</h5>
+                  <p class="mt-5 fw-semibold d-lg-block">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Placeat sapiente deleniti sint corrupti vero Lorem ipsum, dolor sit amet
+                    consectetur
+                  <p class="mt-5"><a href="#">Longboards</a></p>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="carousel-caption">
-                  <h5 class="mt-5">Líderes en el mercado</h5>
-                  <p class="mt-5 d-lg-block">Lorem ipsum, dolor sit amet consectetur
+                  <h5 class="mt-5 fw-semibold">Líderes en el mercado</h5>
+                  <p class="mt-5 fw-semibold d-lg-block">Lorem ipsum, dolor sit amet consectetur
                     adipisicing elit. Placeat sapiente deleniti sint corrupti vero
                     ea?</p>
                   <p class="mt-5"><a href="#">Remeras</a></p>
@@ -113,14 +113,40 @@
             </button>
           </div>
         </div>
-    </div>  
+      </div>
+    </div>
+  </main>
+  <main>
+    <div class="container">
+      <div class="img-container d-flex justify-content-between align-items-center">
+        <img src="./recursos/imagenes/skateboarding-1.jpg" class="img-fluid rounded-3 w-75 m-5" alt="img 1">
+        <div class="text-center flex-grow-1">
+          <p>Skateboards</p>
+          <button type="button" class="btn btn-secondary">VER MÁS</button>
+        </div>
+      </div>
+      <div class="img-container d-flex justify-content-between align-items-center">
+        <div class="text-center flex-grow-1">
+          <p>Longboards</p>
+          <button type="button" class="btn btn-secondary">VER MÁS</button>
+        </div>
+        <img src="./recursos/imagenes/skateboarding-2.jpg" class="img-fluid rounded-3 w-75 m-5" alt="img 1">
+      </div>
+      <div class="img-container d-flex justify-content-between align-items-center">
+        <img src="./recursos/imagenes/skateboarding-3.jpg" class="img-fluid rounded-3 w-75 m-5" alt="img 1">
+        <div class="text-center flex-grow-1">
+          <p>Remeras</p>
+          <button type="button" class="btn btn-secondary">VER MÁS</button>
+        </div>
+      </div>
   </main>
 
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-  crossorigin="anonymous"></script>
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

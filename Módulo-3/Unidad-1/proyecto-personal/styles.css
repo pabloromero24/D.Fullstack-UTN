@@ -1,5 +1,5 @@
 :root{
-    --fondo: #D0F5BE;
+    --fondo: #222222;
     --texto: #547B8C;
     --Primario:#FBFFDC;
     --Secundario:#FFAC4F;
@@ -51,7 +51,8 @@ a {
 .video-carousel-container {
     position: relative;
     margin-top: 9%; 
-    z-index: 0;
+    z-index: 0; 
+    margin-bottom: 15%;   
 }
 
 .video-container {
@@ -60,7 +61,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1;   
 }
 
 .carousel-container {
@@ -78,7 +79,7 @@ a {
 }
 
 .carousel-caption h5 {    
-    font-size: 45px;
+    font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 25px;
@@ -88,7 +89,7 @@ a {
 .carousel-caption p {        
     width: 60%;
     margin: auto;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
     letter-spacing: 2px;
     text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);    
@@ -168,6 +169,27 @@ slide-right{
     100% { transform: translateY(-50%); } 
 }
 
+
+
+.img-container p{
+    font-size: 45px;
+    color: #fff;    
+}
+
+.btn{
+    width: 15vh;
+    height: 7vh;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--texto);
+    padding: 5px 20px;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
 @media only screen and (max-width: 1140px) {
      .logo-skate{
        display: none;
@@ -181,7 +203,8 @@ slide-right{
     }         
     .carousel-caption a{
         padding: 10px 15px;    
-    }     
+    } 
+    
 }
 
 @media (max-width: 900px) {
