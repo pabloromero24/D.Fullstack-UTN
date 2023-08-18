@@ -72,7 +72,7 @@ img{
 }
 
 img:hover{
-    /* animation:wobble-horizontal-top .8s linear both; */
+    animation:wobble-horizontal-top .8s linear both;
     filter: none;
 }
  @keyframes wobble-horizontal-top{

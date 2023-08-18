@@ -17,11 +17,9 @@
 </head>
 
 <body>
-
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="./recursos/videos/skateboarder_-_37845 (540p).mp4" type="video/mp4">
-  </video>
-
+  
+   
+ 
   <header>
     <nav class="contenedor navbar navbar-expand-lg fixed-top">
       <div class="container">
@@ -33,9 +31,9 @@
         </button>
         <div class="col-lg-8 container-fluid">
           <div class="collapse navbar-collapse ul-nav justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav gap-lg-5 gap-md-2 ">
+            <ul class="navbar-nav ms-1 gap-lg-5 gap-md-2">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
@@ -53,10 +51,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Novedades</a>
-              </li>
+              </li>             
               <li class="nav-item">
                 <a class="nav-link" href="#">Contacto</a>
               </li>
@@ -68,57 +63,57 @@
         </div>
       </div>
     </nav>
-  </header>
-  <main>
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Phoenix-Skateboards</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Placeat sapiente deleniti sint corrupti vero
-              ea?</p>
-            <p><a href="#">Skateboards</a></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Líderes en el mercado</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Placeat sapiente deleniti sint corrupti vero
-              ea?</p>
-            <p><a href="#">Longboards</a></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Somos fabricantes</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Placeat sapiente deleniti sint corrupti vero
-              ea?</p>
-            <p><a href="#">Remeras</a></p>
-          </div>
+  </header>  
+  <main>  
+    <div class="video-carousel-container">
+      <div class="video-container">
+        <div class="ratio ratio-16x9">
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="./recursos/videos/skate_-_49791 (540p).mp4" title="" allowfullscreen></video>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+        <div class="carousel-container">
+          <div id="carouselExampleCaptions" class="carousel slide">            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption">
+                  <h5 class="mt-5">Phoenix-Skateboards</h5>
+                  <p class="mt-5 d-lg-block ">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Placeat sapiente deleniti sint corrupti vero
+                    ea?</p>
+                  <p class="mt-5"><a href="#">Skateboards</a></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <h5 class="mt-5">Somos fabricantes</h5>
+                  <p class="mt-5 d-lg-block">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Placeat sapiente deleniti sint corrupti vero Lorem ipsum, dolor sit amet consectetur                    
+                   <p class="mt-5"><a href="#">Longboards</a></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <h5 class="mt-5">Líderes en el mercado</h5>
+                  <p class="mt-5 d-lg-block">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Placeat sapiente deleniti sint corrupti vero
+                    ea?</p>
+                  <p class="mt-5"><a href="#">Remeras</a></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </div>  
   </main>
 
 
