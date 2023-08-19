@@ -4,7 +4,8 @@
     --Primario:#FBFFDC;
     --Secundario:#FFAC4F;
 
-    --fuentePrincipal: 'Barriecito', cursive;   
+    --fuentePrincipal: 'Barriecito', cursive;
+    --fuenteSecundaria:'Roboto Slab', sans-serif;   
     }
 
 /** Globales **/
@@ -52,7 +53,7 @@ a {
     position: relative;
     margin-top: 9%; 
     z-index: 0; 
-    margin-bottom: 15%;   
+    /* margin-bottom: 15%;    */
 }
 
 .video-container {
@@ -61,7 +62,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;   
+    /* z-index: -1;    */
 }
 
 .carousel-container {
@@ -170,16 +171,15 @@ slide-right{
 }
 
 
-
 .img-container p{
-    font-size: 45px;
+    font-size: 40px;
     color: #fff;    
 }
 
 .btn{
-    width: 15vh;
-    height: 7vh;
-    font-size: 18px;
+    width: 50%;
+    height: 25%;
+    font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
     background: var(--texto);
@@ -188,6 +188,45 @@ slide-right{
     margin-top: 15px;
     border-radius: 5px;
     text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    width: 100%; 
+    height: 50vh;  
+    background-image: url(./recursos/imagenes/fondo.jpg);    
+    background-attachment: fixed;
+    clear: both; 
+    font-family: var(--fuenteSecundaria);
+    font-size: large;    
+    color: #fff;  
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;    
+}
+
+.nosotros,
+.product,
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li{    
+    margin-bottom: 30px;
+    font-size: large;
+    text-align: center;
+}
+
+footer p{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.p-footer{    
+    text-align: center;
+    margin-top: 3vh;
 }
 
 @media only screen and (max-width: 1140px) {
