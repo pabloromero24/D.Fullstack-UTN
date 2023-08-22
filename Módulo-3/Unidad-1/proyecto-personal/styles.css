@@ -144,14 +144,45 @@ slide-right{
 
 /** Main Sección Imagenes **/
 
-.img-container p{
+.img-container {
+    position: relative; 
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 1;
+    width: 99.5%;
+    height: 100%;
+    background: linear-gradient(270deg,#222222 0%, rgba(255, 255, 255, 0.2) 80%); 
+    border-radius: 5px;
+    z-index: 2; 
+  }
+  .image-overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 1;    
+    width: 98%;
+    height: 100%;
+    background: linear-gradient(90deg,#222222 0%, rgba(255, 255, 255, 0.2) 80%);
+    border-radius: 5px; 
+    z-index: 2; 
+  }
+    
+  .img-container img {       
+    position: relative; 
+    z-index: 1; 
+  }
+
+  .image-cont p{
     font-size: 40px;
-    color: #fff;    
+    color: #fff; 
+    margin-top: 50%;   
 }
 
-.img-container .btn{
+  .image-cont .btn{
     width: 30%;
-    height: 25%;
+    height: 8%;
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -229,10 +260,10 @@ footer p{
     .carousel-caption a {         
         padding: 4px 15px;        
         margin-top: 15px;              
-    }
-    .img-container .btn{
-        width: 35%;
-        height: 15%;
+    }    
+    .image-cont .btn{
+        width: 45%;
+        height: 10%;
         font-size: 12px;
     }  
 }
@@ -255,18 +286,19 @@ footer p{
     .carousel-caption a {       
         padding: 3px 13px;               
     } 
-    .img-container p{
+    .image-cont p{
+        margin-top: 40%;
         font-size: 30px;            
     } 
-    .img-container .btn{
-        width: 50%;
+    .image-cont .btn{
+        width: 60%;
         height: 15%;
         font-size: 12px;
     }  
 }
 
 @media (max-width: 650px) {
-        .carousel-caption{        
+    .carousel-caption{        
         margin-bottom: 10%;
     }
     .carousel-caption h5 {    
@@ -278,10 +310,14 @@ footer p{
     .carousel-caption a {    
         margin-top: 15px;               
     }
-    .img-container .btn{
-        width: 50%;
-        height: 15%;
-        font-size: 10px;
+    .image-cont p{
+        margin-top: 40%;
+        font-size: 22px;            
+    } 
+    .image-cont .btn{
+        width: 60%;
+        height: 13%;
+        font-size: 8px;
     }
     
 }
@@ -299,14 +335,14 @@ footer p{
     .carousel-caption a {    
         padding: 5px 20px;               
     }
-    .img-container p{
-        font-size: 24px; 
-        margin: 5px;          
+    .image-cont p{
+        margin-top: 45%;
+        font-size: 21px; 
+                 
     }
-    .img-container .btn{
+    .image-cont .btn{
         width: 70%;
         height: 15%;
-        font-size: 10px;        
-    }
-    
+        font-size: 8px;        
+    }    
 }
