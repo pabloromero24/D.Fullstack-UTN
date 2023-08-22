@@ -42,6 +42,7 @@ a {
 .navbar-nav a{
     color: var(--texto) !important;
     letter-spacing: 1px;
+    border-bottom: 1px solid rgb(207, 203, 203);
 }
 
 .navbar-nav .nav-link:hover{
@@ -90,7 +91,7 @@ a {
     top: 100%; 
     transform: translateY(-50%) translateX(-100%);     
     margin-top: 3%;    
-    animation:slide-right 0.7s linear both             
+    animation:slide-right 0.9s linear both             
 }
 @keyframes 
 slide-right{
@@ -136,7 +137,13 @@ slide-right{
     color: #fff;
     margin-top: 15px;
     border-radius: 5px;
-    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);       
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);  
+    transition: 0.6s;     
+}
+.carousel-caption a:hover{
+    color: #222222;   
+    background: var(--Primario);
+    box-shadow: 1px 2px rgba(245, 242, 242, 0.5);
 }
 .carousel-caption{
     margin-bottom: 15%;
@@ -154,7 +161,7 @@ slide-right{
     left: 1;
     width: 99.5%;
     height: 100%;
-    background: linear-gradient(270deg,#222222 0%, rgba(255, 255, 255, 0.2) 80%); 
+    background: linear-gradient(270deg,#222222 15%, rgba(255, 255, 255, 0.2) 80%); 
     border-radius: 5px;
     z-index: 2; 
   }
@@ -164,7 +171,7 @@ slide-right{
     left: 1;    
     width: 98%;
     height: 100%;
-    background: linear-gradient(90deg,#222222 0%, rgba(255, 255, 255, 0.2) 80%);
+    background: linear-gradient(90deg,#222222 10%, rgba(255, 255, 255, 0.2) 80%);
     border-radius: 5px; 
     z-index: 2; 
   }
@@ -190,8 +197,14 @@ slide-right{
     padding: 5px 20px;
     color: #fff;
     margin-top: 15px;
-    border-radius: 5px;
-    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px; 
+    transition: 0.3s;  
+}
+
+.image-cont .btn:hover{ 
+    color: #222222;   
+    background: var(--Secundario);
+    box-shadow: 1px 2px rgba(245, 242, 242, 0.5);
 }
 
 /** Footer **/
@@ -202,7 +215,7 @@ footer{
     background-attachment: fixed;
     clear: both; 
     font-family: var(--fuenteSecundaria);
-    font-size: large;    
+    font-size: large;        
     color: #fff;  
     text-align: center;
     padding: 5px 0;
@@ -212,7 +225,7 @@ footer{
 .nosotros,
 .product,
 .social {
-  list-style: none;
+  list-style: none;  
   padding: 0;
   margin: 0;  
 }
@@ -222,7 +235,17 @@ footer a{
 }
 
 .social svg{
-    margin: 10px;       
+    margin: 10px; 
+    transition: 0.4s;         
+}
+
+footer a:hover{
+    color: var(--texto);
+}
+
+.social svg:hover{
+    transform: scale(1.2);
+    color: var(--texto);
 }
 
 footer li{    
@@ -235,6 +258,7 @@ footer p{
     font-size: x-large;
     text-align: center;
     margin-top: 5vh;
+    border-bottom: 1px solid gray;
 }
 
 .p-footer{    
