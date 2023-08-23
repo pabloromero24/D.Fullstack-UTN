@@ -6,8 +6,8 @@
     --Primario:#FBFFDC;
     --Secundario:#FFAC4F;
 
-    --fuentePrincipal: 'Barriecito', cursive;
-    --fuenteSecundaria:'Roboto Slab', sans-serif;   
+    --fuentePrincipal:'Roboto Slab', sans-serif;
+    --fuenteSecundaria: 'Barriecito', cursive;   
     }
 
 html {
@@ -23,20 +23,31 @@ body {
     background-color: var(--fondo);    
     font-size: 2rem;
     line-height: 1.5;
-    font-family: var(--fuenteSecundaria);
+    font-family: var(--fuentePrincipal);
+}
+.fondo-nosotros{
+    background-color: var(--Primario);
 }
 a {
     text-decoration: none;    
 }
 
 /** Navbar **/
+.marca-central{     
+    color: var(--texto);              
+}
+.marca-central:hover{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.marca-responsive{
+    color: var(--texto);
+}
 
 .navbar {
     background-color: var(--Primario);
 }
-
-.marca{
-    color: var(--texto);
+.navbar-nosotros{
+    background-color: var(--texto);
 }
 
 .navbar-nav a{
@@ -108,7 +119,7 @@ slide-right{
     padding: 0 5% 0 5%;               
 }
 
-/** Main Sección Carousel **/
+/** Main Section Carousel **/
 
 .carousel-inner img{
     width: 65%;
@@ -149,7 +160,7 @@ slide-right{
     margin-bottom: 15%;
 }
 
-/** Main Sección Imagenes **/
+/** Main Section Imagenes **/
 
 .img-container {
     position: relative; 
@@ -182,6 +193,7 @@ slide-right{
   }
 
   .image-cont p{
+    font-family: var(--fuenteSecundaria);
     font-size: 40px;
     color: #fff; 
     margin-top: 50%;   
@@ -207,6 +219,44 @@ slide-right{
     box-shadow: 1px 2px rgba(245, 242, 242, 0.5);
 }
 
+/** Main Section Nosotros **/
+
+.marca-central-nosotros{     
+    color: var(--texto);              
+}
+.marca-central-nosotros:hover{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.marca-responsive-nosotros{
+    color: var(--Secundario);
+    font-size:xx-large;
+}
+.nosotros-nav a{
+    color: var(--Secundario) !important;
+}
+
+.nosotros-text{  
+    margin-top: 10%;  
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    color: var(--texto);
+}
+.nosotros-text h1{
+    font-size: 4.5rem;
+    
+}
+.nosotros-text h2{
+    font-size: 2.5rem;
+    border-bottom: 1px solid gray;
+}
+.card{
+    background-color: var(--Primario);
+}
+.card h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
 /** Footer **/
 
 footer{
@@ -214,7 +264,7 @@ footer{
     background-image: url(./recursos/imagenes/fondo.jpg);    
     background-attachment: fixed;
     clear: both; 
-    font-family: var(--fuenteSecundaria);
+    font-family: var(--fuentePrincipal);
     font-size: large;        
     color: #fff;  
     text-align: center;
@@ -267,7 +317,7 @@ footer p{
 
 /** Media Querys **/
 
-@media (max-width: 1140px) {
+@media (max-width: 1140px) {    
     .skate-box {
         display: none;
     }
@@ -291,8 +341,10 @@ footer p{
         font-size: 12px;
     }  
 }
-
 @media (max-width: 768px) {
+    .marca-responsive-nosotros{        
+        font-size:larger;
+    }
     .skate-box {
         display: none;
     }
@@ -343,10 +395,16 @@ footer p{
         height: 13%;
         font-size: 8px;
     }
+    .marca-central-nosotros{
+        display: none;
+    }
     
 }
 
 @media (max-width: 480px) {
+    .marca-responsive-nosotros{        
+        font-size:medium;
+    }
     .carousel-caption{        
         margin-bottom: 6%;
     }
