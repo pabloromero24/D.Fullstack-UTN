@@ -14,8 +14,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Barriecito&family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto+Condensed:ital@1&family=Roboto+Slab:wght@200;400;600&family=Roboto:wght@300;400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="recursos/videos/138887 (720p).mp4" as="video">  
+  <link rel="preload" href="./normalize.css" as="style">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="preload" href="./styles.css" as="style">
+  <link rel="stylesheet" href="./styles.css">
   <title>Phoenix-Skateboards</title>
 </head>
 
@@ -30,7 +33,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>        
         <div class="col-lg-8 container-fluid">
-          <h1 class="marca-central d-md-none text-center">Phoenix-Skateboards</h1>
+          <h1 class="marca-central d-lg-block d-md-none d-sm-none text-center">Phoenix-Skateboards</h1>
           <div class="collapse navbar-collapse ul-nav justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav ms-1 mb-4 gap-lg-5 gap-md-2">
               <li class="nav-item">
@@ -128,13 +131,13 @@
             <div class="image-overlay"></div>
             <img src="./recursos/imagenes/skateboarding-4.jpg" class="img-fluid al rounded-3" alt="img 1">
           </div>
-          <div class="col-4 text-center flex-grow-1">
+          <div class="col-4 text-center">
             <p>Skateboards</p>
             <button type="button" class="btn btn-secondary">VER MÁS</button>
           </div>
         </div>
         <div class="row">
-          <div class="col-4 text-center flex-grow-1">
+          <div class="col-4 text-center">
             <p>Longboards</p>
             <button type="button" class="btn btn-secondary">VER MÁS</button>
           </div>          
@@ -148,7 +151,7 @@
             <div class="image-overlay"></div>
             <img src="./recursos/imagenes/skateboarding-6.jpg" class="img-fluid rounded-3" alt="img 1">
           </div>
-          <div class="col-4 text-center flex-grow-1">
+          <div class="col-4 text-center">
             <p>Remeras</p>
             <button type="button" class="btn btn-secondary">VER MÁS</button>
           </div>
@@ -176,7 +179,8 @@
           </ul>
         </div>
         <div class="col social">
-          <p>Redes Sociales</p>          
+          <p class="title-social d-lg-block d-md-none d-sm-none">Redes Sociales</p>  
+          <p class="title-social-resp d-lg-none d-md-block d-sm-block">Redes</p>        
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                   fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                   <path
