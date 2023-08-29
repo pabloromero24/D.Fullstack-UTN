@@ -276,20 +276,14 @@ footer p{
 }
 
 /** Media Querys **/
-@media (max-width: 1400px) {
-    .card{
-        width: 25rem !important;
-    }
-    
-}
 
 @media (max-width: 1150px) {  
+    .ratio{
+        margin-top: 8% !important;
+    }
     .img-central{
         width: 85% !important;
-    }  
-    .skate-box {
-        display: none;
-    }
+    }      
     .carousel-caption{
         margin-bottom: 10%;
     }
@@ -297,8 +291,8 @@ footer p{
         font-size: 30px;            
     }
     .carousel-caption p {        
-        width: 55%;        
-        font-size: 15px;            
+        width: 45%;        
+        font-size: 13px;            
     }
     .carousel-caption a {         
         padding: 4px 15px;        
@@ -376,6 +370,9 @@ footer p{
 }
 
 @media (max-width: 650px) {
+    .ratio{
+        margin-top: 10% !important;
+    }
     .carousel-caption{        
         margin-bottom: 10%;
     }
@@ -417,8 +414,12 @@ footer p{
 }
 
 @media (max-width: 480px) {
-    .marca-responsive-nosotros{        
-        font-size:medium;
+    .logo{
+        width: 23%; 
+        height: 23%; 
+    }
+    .ratio{
+        margin-top: 20% !important;
     }
     .carousel-caption{        
         margin-bottom: 6%;
@@ -454,18 +455,24 @@ footer p{
     .section-principal{
         display: none !important;
      }
+     .p-footer{
+        font-size: medium;
+     }
 }
 
 @media (max-width: 400px) {
     .logo{
-        width: 15%; 
-        height: 15%; 
+        width: 20%; 
+        height: 20%; 
+    }
+    .ratio{
+        margin-top: 20% !important;
     }
     .marca-responsive{
         font-size: 20px;
     }
-    .ratio video{
-        margin-top: 15px;
+    .ratio{
+        margin-top: 20% !important;
     }
     .carousel-caption h5 {    
         font-size: 10px;            
@@ -489,17 +496,24 @@ footer p{
         margin: 7px;
         width: 20%;         
         height: 20%;
-     }     
+     }  
+     .p-footer{
+        font-size: small;
+     }
+   
 }
 @media (max-width: 320px) {
+    .ratio{
+        margin-top: 20% !important;
+    }
     .marca-responsive{
-        font-size: 16px;
+        font-size: 14px;
     }
     .carousel-caption h5 {    
-        font-size: 9px;            
+        font-size: 8px;            
     } 
     .image-cont .btn{
-        width: 85%;
+        width: 90%;
         height: 15%;
         font-size: 6px;        
     }
