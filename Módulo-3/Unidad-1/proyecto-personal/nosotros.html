@@ -14,36 +14,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barriecito&family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto+Condensed:ital@1&family=Roboto+Slab:wght@200;400;600&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-        <link rel="preload" href="./recursos/imagenes/nosotros-central .jpg" as="image">
-        <link rel="preload" href="./normalize.css" as="style">
-        <link rel="stylesheet" href="./normalize.css">
-        <link rel="preload" href="./styles.css" as="style">
-        <link rel="stylesheet" href="./styles.css">
+    <link rel="preload" href="./recursos/imagenes/nosotros-central .jpg" as="image">
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preload" href="./css/nosotros.css" as="style">
+    <link rel="stylesheet" href="./css/nosotros.css">
     <title>Phoenix-Skateboards</title>
 </head>
 
-<body class="fondo-nosotros">
+<body>
     <div class="container-fluid">
         <header>
-            <nav class="navbar navbar-nosotros navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
                     <img class="logo col-lg-2" src="./recursos/imagenes/Logo.png" alt="logo">
-                    <p class="marca-responsive-nosotros d-lg-none me-md-5">Phoenix-Skateboards</p>
+                    <p class="marca-responsive d-lg-none me-md-5">Phoenix-Skateboards</p>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="col-lg-8 container-fluid">
-                        <h1 class="marca-central-nosotros d-lg-block d-md-none d-sm-none text-center">
+                        <h1 class="marca-central d-lg-block d-md-none d-sm-none text-center">
                             Phoenix-Skateboards</h1>
                         <div class="collapse navbar-collapse ul-nav justify-content-center" id="navbarSupportedContent">
-                            <ul class="navbar-nav nosotros-nav ms-1 mb-4 gap-lg-5 gap-md-2">
+                            <ul class="navbar-nav ms-1 mb-4 gap-lg-5 gap-md-2">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -51,16 +51,13 @@
                                         Productos
                                     </a>
                                     <ul class="dropdown-menu menu">
-                                        <li><a class="dropdown-item" href="#">Skateboards</a></li>
-                                        <li><a class="dropdown-item" href="#">Longboards</a></li>
-                                        <li><a class="dropdown-item" href="#">Remeras</a></li>
+                                        <li><a class="dropdown-item" href="./skateboards.html">Skateboards</a></li>
+                                        <li><a class="dropdown-item" href="./longboards.html">Longboards</a></li>
+                                        <li><a class="dropdown-item" href="./remeras.html">Remeras</a></li>
                                     </ul>
-                                </li>
+                                </li>                                
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Galeria</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contacto</a>
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -84,29 +81,29 @@
                     <div class="col-lg-3 col-md-12 d-lg-block d-md-flex d-sm-flex order-lg-1 order-md-2 order-2">
                         <div class="card my-auto mx-auto mt-5" style="width: 30rem;">
                             <img src="./recursos/imagenes/nosotros-1.avif" class="card-img-top" alt="card">
-                            <div class="card-body">                                
+                            <div class="card-body">
                                 <h2>Dirección</h2>
                                 <p>Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                                    of the
+                                    card's content.</p>
                             </div>
                         </div>
                         <div class="card my-auto mx-auto mt-5" style="width: 30rem;">
                             <img src="./recursos/imagenes/nosotros-2.avif" class="card-img-top" alt="card">
-                            <div class="card-body">                                
+                            <div class="card-body">
                                 <h2>RR.HH.</h2>
                                 <p>Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                                    of the
+                                    card's content.</p>
                             </div>
                         </div>
                         <div class="card my-auto mx-auto mt-5" style="width: 30rem;">
                             <img src="./recursos/imagenes/nosotros-3.avif" class="card-img-top" alt="card">
-                            <div class="card-body">                                
+                            <div class="card-body">
                                 <h2>Publicidad</h2>
                                 <p>Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                                    of the
+                                    card's content.</p>
                             </div>
                         </div>
                     </div>
@@ -132,129 +129,132 @@
                             natus
                             voluptatem provident eos sint minima nihil blanditiis facilis?
                             Commodi magnam non, exercitationem perferendis impedit natus iusto, saepe in doloribus
-                            dignissimos                            
+                            dignissimos
                         </p>
                         <br>
-                        <img src="./recursos/imagenes/nosotros-img-foot.avif" style="width: 60rem;" class="img-nosotros-text img-fluid" alt="img-foot">
+                        <img src="./recursos/imagenes/nosotros-img-foot.avif" style="width: 60rem;"
+                            class="img-nosotros-text img-fluid" alt="img-foot">
                     </div>
                     <div class="col-lg-3 col-md-12 d-lg-block d-md-flex d-sm-flex order-md-3 order-3">
                         <div class="card my-auto mx-auto mt-5" style="width: 30rem;">
                             <img src="./recursos/imagenes/nosotros-4.avif" class="card-img-top" alt="card">
-                            <div class="card-body">                                
+                            <div class="card-body">
                                 <h2>Fabricación</h2>
                                 <p>Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                                    of the
+                                    card's content.</p>
                             </div>
                         </div>
                         <div class="card my-auto mx-auto mt-5" style="width: 30rem;">
                             <img src="./recursos/imagenes/nosotros-5.avif" class="card-img-top" alt="card">
-                            <div class="card-body">                                
+                            <div class="card-body">
                                 <h2>Marketing</h2>
                                 <p>Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                                    of the
+                                    card's content.</p>
                             </div>
                         </div>
                         <div class="card my-auto mx-auto mt-5" style="width: 30rem;">
                             <img src="./recursos/imagenes/nosotros-6.avif" class="card-img-top" alt="card">
-                            <div class="card-body">                                
+                            <div class="card-body">
                                 <h2>Diseño</h2>
                                 <p>Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                                    of the
+                                    card's content.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="d-lg-none d-md-none d-sm-block">
+            <section class="d-lg-none d-none d-md-none d-sm-block">
                 <div class="container">
                     <div class="row">
                         <div class="nosotros-text col-md-12 p-5">
-                        <h1>Phoenix-Skateboards</h1>
-                        <h2>Somos una empresa de amigos unidos por el skateboarding</h2>
-                        <br>
-                        <br>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat a provident
-                            impedit
-                            qui id
-                            quidem corrupti ex, reprehenderit libero eum. Quidem quod exercitationem maiores nostrum
-                            laboriosam
-                            eveniet laborum tenetur.
-                            Sapiente dolorem fugiat eligendi neque placeat laudantium adipisci cupiditate tempore
-                            repellendus ab
-                            recusandae animi repudiandae laborum pariatur nisi aliquid, soluta aperiam harum ullam
-                            dicta?
-                            Beatae, pariatur. Veniam possimus soluta minima?
-                            Dicta doloremque suscipit veritatis aut, voluptates vitae asperiores enim, assumenda officia
-                            pariatur minus? Doloribus, excepturi fugit? Inventore cupiditate in, reiciendis tempore
-                            natus
-                            voluptatem provident eos sint minima nihil blanditiis facilis?
-                            Commodi magnam non, exercitationem perferendis impedit natus iusto, saepe in doloribus
-                            dignissimos                            
-                        </p>
-                        <br>
-                        <img src="./recursos/imagenes/nosotros-img-foot.avif" style="width: 60rem;" class="img-nosotros-text img-fluid" alt="img-foot">
-                    </div>
+                            <h1>Phoenix-Skateboards</h1>
+                            <h2>Somos una empresa de amigos unidos por el skateboarding</h2>
+                            <br>
+                            <br>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat a provident
+                                impedit
+                                qui id
+                                quidem corrupti ex, reprehenderit libero eum. Quidem quod exercitationem maiores nostrum
+                                laboriosam
+                                eveniet laborum tenetur.
+                                Sapiente dolorem fugiat eligendi neque placeat laudantium adipisci cupiditate tempore
+                                repellendus ab
+                                recusandae animi repudiandae laborum pariatur nisi aliquid, soluta aperiam harum ullam
+                                dicta?
+                                Beatae, pariatur. Veniam possimus soluta minima?
+                                Dicta doloremque suscipit veritatis aut, voluptates vitae asperiores enim, assumenda
+                                officia
+                                pariatur minus? Doloribus, excepturi fugit? Inventore cupiditate in, reiciendis tempore
+                                natus
+                                voluptatem provident eos sint minima nihil blanditiis facilis?
+                                Commodi magnam non, exercitationem perferendis impedit natus iusto, saepe in doloribus
+                                dignissimos
+                            </p>
+                            <br>
+                            <img src="./recursos/imagenes/nosotros-img-foot.avif" style="width: 60rem;"
+                                class="img-nosotros-text img-fluid" alt="img-foot">
+                        </div>
                         <div class="section-secundaria col-md-12 col-sm-12 d-flex">
                             <div class="card-s my-auto mx-auto mt-5" style="width: 30rem;">
                                 <img src="./recursos/imagenes/nosotros-1.avif" class="card-img-top" alt="card">
-                                <div class="card-body">                                
+                                <div class="card-body">
                                     <h2>Dirección</h2>
                                     <p>Some quick example text to build on the card title and make up the bulk
-                                    of the
-                                    card's content.</p>
+                                        of the
+                                        card's content.</p>
                                 </div>
                             </div>
                             <div class="card-s my-auto mx-auto mt-5" style="width: 30rem;">
                                 <img src="./recursos/imagenes/nosotros-2.avif" class="card-img-top" alt="card">
-                                <div class="card-body">                                
+                                <div class="card-body">
                                     <h2>RR.HH.</h2>
                                     <p>Some quick example text to build on the card title and make up the bulk
-                                    of the
-                                    card's content.</p>
+                                        of the
+                                        card's content.</p>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                         <div class="section-secundaria col-md-12 col-sm-12 d-flex">
                             <div class="card-s my-auto mx-auto mt-5" style="width: 30rem;">
                                 <img src="./recursos/imagenes/nosotros-3.avif" class="card-img-top" alt="card">
-                                <div class="card-body">                                
+                                <div class="card-body">
                                     <h2>Publicidad</h2>
                                     <p>Some quick example text to build on the card title and make up the bulk
-                                    of the
-                                    card's content.</p>
+                                        of the
+                                        card's content.</p>
                                 </div>
                             </div>
                             <div class="card-s my-auto mx-auto mt-5" style="width: 30rem;">
                                 <img src="./recursos/imagenes/nosotros-4.avif" class="card-img-top" alt="card">
-                                <div class="card-body">                                
+                                <div class="card-body">
                                     <h2>Fabricación</h2>
                                     <p>Some quick example text to build on the card title and make up the bulk
-                                    of the
-                                    card's content.</p>
+                                        of the
+                                        card's content.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="section-secundaria col-md-12 col-sm-12 d-flex">
                             <div class="card-s my-auto mx-auto mt-5" style="width: 30rem;">
                                 <img src="./recursos/imagenes/nosotros-5.avif" class="card-img-top" alt="card">
-                                <div class="card-body">                                
+                                <div class="card-body">
                                     <h2>Marketing</h2>
                                     <p>Some quick example text to build on the card title and make up the bulk
-                                    of the
-                                    card's content.</p>
+                                        of the
+                                        card's content.</p>
                                 </div>
                             </div>
                             <div class="card-s my-auto mx-auto mt-5" style="width: 30rem;">
                                 <img src="./recursos/imagenes/nosotros-6.avif" class="card-img-top" alt="card">
-                                <div class="card-body">                                
+                                <div class="card-body">
                                     <h2>Diseño</h2>
                                     <p>Some quick example text to build on the card title and make up the bulk
-                                    of the
-                                    card's content.</p>
+                                        of the
+                                        card's content.</p>
                                 </div>
                             </div>
                         </div>
@@ -270,7 +270,7 @@
                 <div class="col">
                     <p>Nosotros</p>
                     <ul class="nosotros">
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
                         <li><a href="#">Ubicación</a></li>
                         <li><a href="#">Galeria</a></li>
                     </ul>
@@ -278,14 +278,14 @@
                 <div class="col">
                     <p>Productos</p>
                     <ul class="product">
-                        <li><a href="#">Skateboards</a></li>
-                        <li><a href="#">Longboards</a></li>
-                        <li><a href="#">Remeras</a></li>
+                        <li><a href="./skateboards.html">Skateboards</a></li>
+                        <li><a href="./longboards.html">Longboards</a></li>
+                        <li><a href="./remeras.html">Remeras</a></li>
                     </ul>
                 </div>
                 <div class="col social">
-                    <p class="title-social d-lg-block d-md-none d-sm-none">Redes Sociales</p>  
-                    <p class="title-social-resp d-lg-none d-md-block d-sm-block">Redes</p>  
+                    <p class="title-social d-lg-block d-md-none d-sm-none">Redes Sociales</p>
+                    <p class="title-social-resp d-lg-none d-md-block d-sm-block">Redes</p>
                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path

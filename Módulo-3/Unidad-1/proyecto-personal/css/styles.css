@@ -1,0 +1,510 @@
+/** Globales **/
+
+:root{
+    --fondo: #222222;
+    --texto: #547B8C;
+    --Primario:#FBFFDC;
+    --Secundario:#FFAC4F;
+
+    --fuentePrincipal:'Roboto Slab', sans-serif;
+    --fuenteSecundaria: 'Barriecito', cursive;   
+    }
+
+html {
+     box-sizing: border-box;
+     font-size: 62.5%;      
+ }
+    
+ *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {    
+    background-color: var(--fondo);    
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+}
+a {
+    text-decoration: none;    
+}
+
+/** Navbar **/
+.marca-central{     
+    color: var(--texto); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);             
+}
+.marca-central:hover{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.marca-responsive{
+    color: var(--texto);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.marca-responsive:hover{    
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.navbar {
+    background-color: var(--Primario);
+}
+.navbar-nav a{
+    color: var(--texto) !important;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgb(207, 203, 203);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); 
+}
+.navbar-nav .nav-link:hover{
+    text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);     
+}
+
+.logo{
+    width: 10%; 
+    height: 10%; 
+    border: 2px solid #98EECC;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: inline-block;
+    margin-left: 6%;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5);         
+}
+
+.logo:hover{
+    box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu{    
+    background-color: #333;
+}
+
+.dropdown-item{
+    font-size:large;          
+}
+
+.dropdown-item:hover{
+    color: #333 !important;
+    background-color:#98EECC;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.skate-box{
+    width: 100%; 
+    overflow: visible; 
+    position: relative;
+}
+
+.logo-skate{
+    width: 15%; 
+    height: auto;
+    position: absolute;
+    top: 100%; 
+    transform: translateY(-50%) translateX(-100%);     
+    margin-top: 3%;    
+    animation:slide-right 0.9s linear both             
+}
+@keyframes 
+slide-right{
+    0% { transform: translateY(-35%) translateX(-100%);}
+    50%{transform: translateY(-65%) translateX(-50%);}
+    100% { transform: translateY(-50%); } 
+}
+
+/** Main Sección Video **/
+
+.ratio video{
+    position: absolute;    
+    z-index: -1; 
+    padding: 0 5% 0 5%;               
+}
+
+/** Main Section Carousel **/
+
+.carousel-inner img{
+    width: 65%;
+}
+.carousel-caption h5 {    
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);    
+}
+.carousel-caption p {        
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);    
+}
+.carousel-caption a {    
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--texto);
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);  
+    transition: 0.6s;     
+}
+.carousel-caption a:hover{
+    color: #222222;   
+    background: var(--Primario);
+    box-shadow: 1px 2px rgba(245, 242, 242, 0.5);
+}
+.carousel-caption{
+    margin-bottom: 15%;
+}
+
+/** Main Section Imagenes **/
+
+.img-container {
+    position: relative; 
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 1;
+    width: 99.5%;
+    height: 100%;
+    background: linear-gradient(270deg,#222222 15%, rgba(255, 255, 255, 0.2) 80%); 
+    border-radius: 5px;
+    z-index: 2; 
+  }
+  .image-overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 1;    
+    width: 98%;
+    height: 100%;
+    background: linear-gradient(90deg,#222222 10%, rgba(255, 255, 255, 0.2) 80%);
+    border-radius: 5px; 
+    z-index: 2; 
+  }
+    
+  .img-container img {       
+    position: relative; 
+    z-index: 1; 
+  }
+
+  .image-cont p{
+    font-family: var(--fuenteSecundaria);
+    font-size: 40px;
+    color: #fff; 
+    margin-top: 50%;   
+}
+
+  .image-cont .btn{
+    width: 30%;
+    height: 8%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--texto);
+    padding: 5px 20px;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px; 
+    transition: 0.3s;  
+}
+
+.image-cont .btn:hover{ 
+    color: #222222;   
+    background: var(--Secundario);
+    box-shadow: 1px 2px rgba(245, 242, 242, 0.5);
+}
+
+/** Footer **/
+
+footer{
+    width: 100%;    
+    background-image: url(/Módulo-3/Unidad-1/proyecto-personal/recursos/imagenes/fondo.jpg);    
+    background-attachment: fixed;
+    clear: both; 
+    font-family: var(--fuentePrincipal);
+    font-size: large;        
+    color: #fff;  
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;    
+}
+
+.nosotros,
+.product,
+.social {
+  list-style: none;  
+  padding: 0;
+  margin: 0;  
+}
+
+footer a{
+    color: var(--Secundario);
+}
+
+.social svg{
+    margin: 10px; 
+    transition: 0.4s;         
+}
+
+footer a:hover{
+    color: var(--texto);
+}
+
+.social svg:hover{
+    transform: scale(1.2);
+    color: var(--texto);
+}
+
+footer li{    
+    margin-bottom: 30px;
+    font-size: large;
+    text-align: center;
+}
+
+footer p{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 5vh;
+    border-bottom: 1px solid gray;
+}
+
+.p-footer{    
+    text-align: center; 
+    font-size: large;  
+}
+
+/** Media Querys **/
+@media (max-width: 1400px) {
+    .card{
+        width: 25rem !important;
+    }
+    
+}
+
+@media (max-width: 1150px) {  
+    .img-central{
+        width: 85% !important;
+    }  
+    .skate-box {
+        display: none;
+    }
+    .carousel-caption{
+        margin-bottom: 10%;
+    }
+    .carousel-caption h5 {    
+        font-size: 30px;            
+    }
+    .carousel-caption p {        
+        width: 55%;        
+        font-size: 15px;            
+    }
+    .carousel-caption a {         
+        padding: 4px 15px;        
+        margin-top: 15px;              
+    } 
+    .image-overlay-2{
+        width: 97%;
+    }   
+    .image-cont .btn{
+        width: 50%;
+        height: 9%;
+        font-size: 13px;
+    }  
+    .section-principal{
+        display: block !important;
+     }
+    .card{
+        width: 22rem !important;
+    }
+    .card h2{
+        font-size: 2.5rem;
+    }
+    .card p{
+        font-size: medium;
+    }    
+}
+@media (max-width: 768px) {    
+    .skate-box {
+        display: none;
+    }    
+    .carousel-caption{
+        margin-bottom: 10%;
+    }
+    .carousel-caption h5 {    
+        font-size: 25px;
+            
+    }
+    .carousel-caption p {        
+        width: 45%;        
+        font-size: 11px;           
+    }
+    .carousel-caption a {       
+        padding: 3px 13px;               
+    }     
+    .image-cont p{
+        margin-top: 40%;
+        font-size: 30px;            
+    } 
+    .image-cont .btn{
+        width: 60%;
+        height: 15%;
+        font-size: 12px;
+    } 
+    .social svg{
+        width: 11%;         
+        height: 11%;
+     } 
+     .section-principal{
+        display: block !important;
+     }
+     .card{
+        width: 22rem !important;
+    }
+    .order-1 {
+        order: 2;
+    }
+
+    .order-2 {
+        order: 1;
+    }
+
+    .order-3 {
+        order: 3;
+    }
+}
+
+@media (max-width: 650px) {
+    .carousel-caption{        
+        margin-bottom: 10%;
+    }
+    .carousel-caption h5 {    
+        font-size: 17px;            
+    }  
+    .carousel-caption p:nth-child(2){
+        display: none;
+    }      
+    .carousel-caption a {    
+        margin-top: 15px;               
+    }
+    .image-cont p{
+        margin-top: 40%;
+        font-size: 22px;            
+    } 
+    .image-cont .btn{
+        width: 60%;
+        height: 13%;
+        font-size: 8px;
+    }
+    .image-overlay-2 {
+        width: 96%;
+    }
+    .marca-central{
+        display: none;
+    }    
+    .title-social{
+        display: none;
+    } 
+    .section-secundaria{
+        display: block !important;
+    } 
+    .card,
+    .card-s{
+        width: 30rem !important;
+    }
+       
+}
+
+@media (max-width: 480px) {
+    .marca-responsive-nosotros{        
+        font-size:medium;
+    }
+    .carousel-caption{        
+        margin-bottom: 6%;
+    }
+    .carousel-caption h5 {    
+        font-size: 14px;            
+    } 
+    .carousel-caption p:nth-child(2){
+        display: none;
+    }     
+    .carousel-caption a {    
+        padding: 5px 20px;               
+    }
+    .image-overlay-2{
+        width: 93%;
+    } 
+    .image-cont p{
+        margin-top: 45%;
+        font-size: 21px;                  
+    }
+    .image-cont .btn{
+        width: 70%;
+        height: 15%;
+        font-size: 8px;        
+    }  
+    .social svg{      
+       width: 22%;         
+       height: 22%;
+    } 
+    .title-social{
+        display: none;
+    } 
+    .section-principal{
+        display: none !important;
+     }
+}
+
+@media (max-width: 400px) {
+    .logo{
+        width: 15%; 
+        height: 15%; 
+    }
+    .marca-responsive{
+        font-size: 20px;
+    }
+    .ratio video{
+        margin-top: 15px;
+    }
+    .carousel-caption h5 {    
+        font-size: 10px;            
+    } 
+    .carousel-caption a {         
+        padding: 1px 6px;                     
+    }      
+    .image-cont .btn{
+        width: 80%;
+        height: 15%;
+        font-size: 6px;        
+    }
+    .image-cont p{
+        margin-top: 45%;
+        font-size: 15px;                        
+    } 
+    .section-principal{
+        display: none !important;
+     }    
+    .social svg{
+        margin: 7px;
+        width: 20%;         
+        height: 20%;
+     }     
+}
+@media (max-width: 320px) {
+    .marca-responsive{
+        font-size: 16px;
+    }
+    .carousel-caption h5 {    
+        font-size: 9px;            
+    } 
+    .image-cont .btn{
+        width: 85%;
+        height: 15%;
+        font-size: 6px;        
+    }
+    .social svg{
+        width: 10%;
+        margin-bottom: 20px;        
+    }    
+}
