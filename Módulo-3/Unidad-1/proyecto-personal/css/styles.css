@@ -277,13 +277,20 @@ footer p{
 
 /** Media Querys **/
 
-@media (max-width: 1150px) {  
-    .ratio{
-        margin-top: 8% !important;
+@media (max-width: 1150px) { 
+    .logo{
+        width: 15%;
+        height: 15%;
+    } 
+    .marca-responsive{
+        font-size: xx-large;
     }
     .img-central{
         width: 85% !important;
-    }      
+    }  
+    .skate-box {
+        display: none;
+    }
     .carousel-caption{
         margin-bottom: 10%;
     }
@@ -291,8 +298,8 @@ footer p{
         font-size: 30px;            
     }
     .carousel-caption p {        
-        width: 45%;        
-        font-size: 13px;            
+        width: 55%;        
+        font-size: 15px;            
     }
     .carousel-caption a {         
         padding: 4px 15px;        
@@ -414,6 +421,9 @@ footer p{
 }
 
 @media (max-width: 480px) {
+    .marca-responsive{
+        font-size: medium;
+    }
     .logo{
         width: 23%; 
         height: 23%; 
@@ -469,7 +479,7 @@ footer p{
         margin-top: 20% !important;
     }
     .marca-responsive{
-        font-size: 20px;
+        font-size: 18px;
     }
     .ratio{
         margin-top: 20% !important;

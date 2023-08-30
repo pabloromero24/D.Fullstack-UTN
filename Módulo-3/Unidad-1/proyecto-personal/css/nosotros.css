@@ -129,6 +129,9 @@ slide-right{
     font-size: 2.5rem;
     border-bottom: 1px solid gray;
 }
+.nosotros-text p{
+    margin: 0 10%;
+}
 .img-nosotros-text{
     border-radius: 30px;
     box-shadow:  6px 2px 6px rgba(0, 0, 0, 0.5);
@@ -137,20 +140,17 @@ slide-right{
 .img-nosotros-text:hover{
     box-shadow:  10px 6px 10px rgba(0, 0, 0, 0.5);
 }
-.card,
-.card-s{
+.card{
     background-color: var(--Primario);
     box-shadow:  4px 1px 4px rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
     margin-bottom: 20px !important;
 }
-.card:hover,
-.card-s:hover{
+.card:hover{
     transform: scale(1.1);
     box-shadow:  6px 3px 5px rgba(0, 0, 0, 0.5);
 }
-.card h2,
-.card-s h2{
+.card h2{
     text-align: center;
     font-size: 3rem;
     color: var(--texto);
@@ -222,23 +222,16 @@ footer p{
 }
 
 /** Media Querys **/
-@media (max-width: 1400px) {
-    .card{
-        width: 25rem !important;
-    }
-    
-}
-
 @media (max-width: 1150px) {  
     .img-central{
         width: 85% !important;
     }  
     .skate-box {
         display: none;
-    }    
-    .card{
-        width: 22rem !important;
     }
+    .card{
+        width: 80% !important;
+    }     
     .card h2{
         font-size: 2.5rem;
     }
@@ -253,11 +246,18 @@ footer p{
     }
     .nosotros-text p{
         font-size: large;
+    } 
+    .order-0 {
+        order: 3 !important;
     }
-    .img-nosotros-text{
-        width: 40rem !important;
+
+    .order-1 {
+        order: 2 !important;
     }
-    
+
+    .order-2 {
+        order: 0 !important;
+    }   
 }
 @media (max-width: 768px) {
     .marca-responsive{        
@@ -272,24 +272,7 @@ footer p{
     .social svg{
         width: 11%;         
         height: 11%;
-     }      
-     .card{
-        width: 22rem !important;                
-    }
-    .card-s{
-        margin: 20px !important;
-    }
-    .order-1 {
-        order: 2;
-    }
-
-    .order-2 {
-        order: 1;
-    }
-
-    .order-3 {
-        order: 3;
-    }
+     }    
 }
 
 @media (max-width: 650px) {    
@@ -301,18 +284,13 @@ footer p{
     }
     .title-social{
         display: none;
-    }      
-    .card,
-    .card-s{
-        width: 30rem !important;
-    }
-       
+    }         
 }
 
 @media (max-width: 480px) {
     .marca-responsive{        
         font-size:medium;
-    }    
+    }      
     .social svg{      
        width: 22%;         
        height: 22%;
@@ -329,10 +307,7 @@ footer p{
     }
     .marca-responsive{
         font-size: 20px;
-    }
-    .card-s{
-        width: 20rem !important;
-    }
+    }    
     .card-s h2{
         font-size: 2rem;
     }
