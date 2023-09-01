@@ -191,7 +191,7 @@ slide-right{
 
 footer{
     width: 100%;    
-    background-image: url(/Módulo-3/Unidad-1/proyecto-personal/recursos/imagenes/fondo.jpg);    
+    background-image: url(../recursos/imagenes/fondo.jpg);    
     background-attachment: fixed;
     clear: both; 
     font-family: var(--fuentePrincipal);
@@ -245,10 +245,10 @@ footer p{
     } 
     .marca-responsive{        
         font-size:larger;
-    }
+    }   
     .img-container{
-        margin-top: 9%;    
-    }
+        margin-top: 9%;
+    } 
     .form-cont{
         margin-top: 1px;    
     }
@@ -285,10 +285,7 @@ footer p{
     }
     .skate-box {
         display: none;
-    }  
-    .img-container{
-        margin-top: 10%;    
-    }
+    }     
     .form-cont h1{
         font-size: large;
     }
@@ -333,7 +330,7 @@ footer p{
         display: none;
     }
     .img-container{
-        margin-top: 11%;    
+        margin-top: 10%;    
     } 
     .title-social{
         display: none;
@@ -386,14 +383,14 @@ footer p{
         margin-right: 4%;
     }
     .logo{
-        width: 15%; 
-        height: 15%; 
+        width: 14%; 
+        height: 14%; 
     }
     .marca-responsive{
         font-size: 20px;
     }
     .img-container{
-        margin-top: 16%;    
+        margin-top: 15%;    
     } 
     .social svg{
         margin: 7px;

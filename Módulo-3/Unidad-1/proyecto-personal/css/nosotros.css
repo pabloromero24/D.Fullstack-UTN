@@ -159,7 +159,7 @@ slide-right{
 
 footer{
     width: 100%;    
-    background-image: url(/Módulo-3/Unidad-1/proyecto-personal/recursos/imagenes/fondo.jpg);    
+    background-image: url(../recursos/imagenes/fondo.jpg);    
     background-attachment: fixed;
     clear: both; 
     font-family: var(--fuentePrincipal);
@@ -296,8 +296,8 @@ footer p{
 
 @media (max-width: 400px) {   
     .logo{
-        width: 15%; 
-        height: 15%; 
+        width: 14%; 
+        height: 14%; 
     }
     .marca-responsive{
         font-size: 75%;

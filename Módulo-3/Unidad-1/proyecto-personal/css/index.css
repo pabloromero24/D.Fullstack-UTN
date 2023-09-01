@@ -230,7 +230,7 @@ slide-right{
 
 footer{
     width: 100%;    
-    background-image: url(/Módulo-3/Unidad-1/proyecto-personal/recursos/imagenes/fondo.jpg);    
+    background-image: url(../recursos/imagenes/fondo.jpg);    
     background-attachment: fixed;
     clear: both; 
     font-family: var(--fuentePrincipal);
@@ -282,11 +282,7 @@ footer p{
 @media (max-width: 1150px) { 
     .ratio{
         margin-top: 10% !important;
-    }
-    .logo{
-        width: 15%;
-        height: 15%;
-    } 
+    }     
     .navbar-toggler{
         margin-right: 4%;
     }
@@ -466,11 +462,7 @@ footer p{
 @media (max-width: 480px) {
     .marca-responsive{
         font-size: large;
-    }
-    .logo{
-        width: 23%; 
-        height: 23%; 
-    }
+    }    
     .ratio{
         margin-top: 16% !important;
     }
@@ -520,10 +512,7 @@ footer p{
 }
 
 @media (max-width: 400px) {
-    .logo{
-        width: 20%; 
-        height: 20%; 
-    }
+    
     .ratio{
         margin-top: 15% !important;
     }
