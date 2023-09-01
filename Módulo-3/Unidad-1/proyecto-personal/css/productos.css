@@ -196,7 +196,7 @@ footer li{
 footer p{
     font-size: x-large;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2vh;
     border-bottom: 1px solid gray;
 }
 
@@ -219,7 +219,15 @@ footer p{
         width: 80%;
         margin: 0 auto;
         margin-top: 5%;
-    }      
+    } 
+    footer p{
+        font-size: large;
+        margin-top: 1vh;
+    } 
+    .nosotros a,
+    .product a{
+        font-size: medium;
+    }       
 }
 
 @media (max-width: 650px) {    
@@ -276,7 +284,10 @@ footer p{
     .social svg{
         width: 10%;
         margin-bottom: 20px;        
-    }    
+    }
+    .p-footer{
+        font-size: medium;
+    }      
 }
 
 

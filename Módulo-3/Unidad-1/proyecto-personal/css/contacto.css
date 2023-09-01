@@ -115,7 +115,8 @@ slide-right{
     margin-top: 10%;        
   } 
   .card-img-overlay{
-    position: absolute;    
+    position: absolute;   
+    border-radius: 0px !important; 
     width: 100%;
     height: 100%;           
     text-align: center;
@@ -139,22 +140,22 @@ slide-right{
     opacity: 1;
     background: rgba(1, 1, 1, 0.6);
   }    
-  .img-container img {        
+  .img-container img { 
+    border-radius: 0px !important;       
     position: relative; 
     z-index: 1; 
   }
 
 /** Section Formulario **/
 .form-cont{
-    margin-top: 10%;    
+    margin-top: 10%; 
+    text-align: center;   
 }
 .form-cont h1{
-    color: black;
-    text-align: center;
+    color: black;   
 }
 .form-cont h2{
-    color: rgb(104, 103, 103);
-    text-align: center;
+    color: rgb(104, 103, 103);   
     padding-bottom: 5%;        
 }
 .form-cont input{    
@@ -183,6 +184,7 @@ slide-right{
     font-size: medium;
     width: 15%;
     height: 40px;
+    margin-bottom: 10%;
     background-color: var(--texto);
     box-shadow: 5px 5px 5px rgba(26, 25, 25, 0.5);
     transition: 0.3s;
@@ -242,7 +244,7 @@ footer li{
 footer p{
     font-size: x-large;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2vh;
     border-bottom: 1px solid gray;
 }
 
@@ -257,12 +259,40 @@ footer p{
     .skate-box {
         display: none;
     } 
+    .marca-responsive{        
+        font-size:larger;
+    }
     .img-container{
         margin-top: 9%;    
     }
     .form-cont{
         margin-top: 1px;    
-    }   
+    }
+    .form-cont h1{
+        font-size: larger;
+    }
+    .form-cont h2{
+        font-size: large;
+    }
+    .form-cont label{
+        font-size: medium;
+    }
+    .form-cont input{
+        width: 60%;
+        height: 28px;
+    }
+    .form-cont textarea{
+        width: 60%;
+        height: 55px;
+    }
+    .form-cont .btn{
+        width: 25%;
+        height: 38px;
+    }      
+    footer p{
+        font-size: larger;
+        margin-top: 1vh;
+    }        
     
 }
 @media (max-width: 768px) {
@@ -274,6 +304,36 @@ footer p{
     }  
     .img-container{
         margin-top: 10%;    
+    }
+    .form-cont h1{
+        font-size: large;
+    }
+    .form-cont h2{
+        font-size: medium;
+    }
+    .form-cont label{
+        font-size: medium;
+    }
+    .form-cont input{
+        width: 75%;
+        height: 25px;
+        margin-top: 1px !important;
+    } 
+    .form-cont textarea{
+        width: 75%;
+        height: 50px;
+    }  
+    .form-cont .btn{
+        width: 20%;
+        height: 33px;
+    }   
+    footer p{
+        font-size: large;
+        margin-top: 1vh;
+    }  
+    .nosotros a,
+    .product a{
+        font-size: medium;
     }     
     .social svg{
         width: 11%;         
@@ -293,7 +353,11 @@ footer p{
     } 
     .title-social{
         display: none;
-    }       
+    } 
+    .social svg{
+        width: 20%;         
+        height: 20%;
+     }      
 }
 
 @media (max-width: 480px) {
@@ -301,7 +365,14 @@ footer p{
         font-size:medium;
     } 
     .img-container{
-        margin-top: 12%;    
+        margin-top: 16%;    
+    }
+    .logo{
+        width: 15%; 
+        height: 15%; 
+    }
+    .marca-responsive{
+        font-size: 20px;
     }
     .card-img-overlay h1{
         font-size: larger;    
@@ -361,8 +432,11 @@ footer p{
         font-size: small;    
       }    
     .social svg{
-        width: 10%;
+        width: 18%;
+        height: 18%;
         margin-bottom: 20px;        
     }
-    
+    .p-footer{
+        font-size: medium;
+    }    
 }

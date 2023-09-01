@@ -110,16 +110,37 @@ slide-right{
 
 /** Main Sección Video **/
 
-.ratio video{
+.ratio video{    
     position: absolute;    
     z-index: -1; 
     padding: 0 5% 0 5%;               
 }
+.overlay-video{
+    position: absolute;
+    margin: auto;      
+    width: 90%;
+    height: 90%;           
+    text-align: center;
+    z-index: 2; 
+    opacity: 0;
+    transition: all .2s ease-out;
+  }
+  .overlay-video:hover{
+    color: white;
+    opacity: 1;
+    background: rgba(1, 1, 1, 0.6);
+  } 
+  .video-container h1{
+    padding-top: 25% !important;    
+  }  
+  .video-container h1, p{    
+    font-size: 7vh;
+  } 
 
 /** Main Section Carousel **/
 
 .carousel-inner img{
-    width: 65%;
+    width: 75%;    
 }
 .carousel-caption h5 {    
     font-size: 35px;
@@ -158,6 +179,9 @@ slide-right{
 }
 
 /** Main Section Imagenes **/
+.image-cont{
+    margin-top: 3%;
+}
 
 .img-container {
     position: relative; 
@@ -266,7 +290,7 @@ footer li{
 footer p{
     font-size: x-large;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2vh;
     border-bottom: 1px solid gray;
 }
 
@@ -278,10 +302,16 @@ footer p{
 /** Media Querys **/
 
 @media (max-width: 1150px) { 
+    .ratio{
+        margin-top: 10% !important;
+    }
     .logo{
         width: 15%;
         height: 15%;
     } 
+    .navbar-toggler{
+        margin-right: 4%;
+    }
     .marca-responsive{
         font-size: xx-large;
     }
@@ -291,6 +321,12 @@ footer p{
     .skate-box {
         display: none;
     }
+    .card-img-overlay h1{
+        padding-top: 13% !important;    
+    }  
+      .card-img-overlay h1, p{        
+        font-size: 3vh;
+    } 
     .carousel-caption{
         margin-bottom: 10%;
     }
@@ -324,12 +360,26 @@ footer p{
     }
     .card p{
         font-size: medium;
-    }    
+    } 
+    footer p{
+        font-size: larger;
+        margin-top: 1vh;
+    } 
+    .social svg{
+        width: 10%;         
+        height: 10%;
+     }    
 }
 @media (max-width: 768px) {    
     .skate-box {
         display: none;
-    }    
+    }  
+    .card-img-overlay h1{
+        padding-top: 18% !important;    
+    }  
+      .card-img-overlay h1, p{        
+        font-size: 4vh;
+    }   
     .carousel-caption{
         margin-bottom: 10%;
     }
@@ -354,9 +404,17 @@ footer p{
         font-size: 12px;
     } 
     .social svg{
-        width: 11%;         
-        height: 11%;
-     } 
+        width: 10%;         
+        height: 10%;
+     }
+     footer p{
+        font-size: large;
+        margin-top: 1vh;
+    }  
+    .nosotros a,
+    .product a{
+        font-size: medium;
+    }  
      .section-principal{
         display: block !important;
      }
@@ -377,8 +435,11 @@ footer p{
 }
 
 @media (max-width: 650px) {
+    .marca-responsive{
+        font-size: larger;
+    }
     .ratio{
-        margin-top: 10% !important;
+        margin-top: 8% !important;
     }
     .carousel-caption{        
         margin-bottom: 10%;
@@ -417,20 +478,30 @@ footer p{
     .card-s{
         width: 30rem !important;
     }
+    .social svg{
+        width: 10%;         
+        height: 10%;
+     }
        
 }
 
 @media (max-width: 480px) {
     .marca-responsive{
-        font-size: medium;
+        font-size: large;
     }
     .logo{
         width: 23%; 
         height: 23%; 
     }
     .ratio{
-        margin-top: 20% !important;
+        margin-top: 16% !important;
     }
+    .card-img-overlay h1{
+        padding-top: 15% !important;    
+    }  
+      .card-img-overlay h1, p{       
+        font-size: 3vh;
+    } 
     .carousel-caption{        
         margin-bottom: 6%;
     }
@@ -456,8 +527,8 @@ footer p{
         font-size: 8px;        
     }  
     .social svg{      
-       width: 22%;         
-       height: 22%;
+       width: 20%;         
+       height: 20%;
     } 
     .title-social{
         display: none;
@@ -476,14 +547,17 @@ footer p{
         height: 20%; 
     }
     .ratio{
-        margin-top: 20% !important;
+        margin-top: 15% !important;
     }
     .marca-responsive{
         font-size: 18px;
-    }
-    .ratio{
-        margin-top: 20% !important;
-    }
+    } 
+    .card-img-overlay h1{
+        padding-top: 13% !important;    
+    }  
+      .card-img-overlay h1, p{        
+        font-size: 3vh;
+    }    
     .carousel-caption h5 {    
         font-size: 10px;            
     } 
@@ -519,6 +593,12 @@ footer p{
     .marca-responsive{
         font-size: 14px;
     }
+    .card-img-overlay h1{
+        padding-top: 14% !important;    
+    }  
+      .card-img-overlay h1, p{        
+        font-size: 4vh;
+    }  
     .carousel-caption h5 {    
         font-size: 8px;            
     } 
@@ -528,7 +608,11 @@ footer p{
         font-size: 6px;        
     }
     .social svg{
-        width: 10%;
+        width: 20%;
+        height: 20%;
         margin-bottom: 20px;        
-    }    
+    }  
+     .p-footer{
+        font-size: medium;
+    }   
 }
