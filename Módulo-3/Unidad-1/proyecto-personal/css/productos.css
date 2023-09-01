@@ -9,12 +9,10 @@
     --fuentePrincipal:'Roboto Slab', sans-serif;
     --fuenteSecundaria: 'Barriecito', cursive;   
     }
-
 html {
      box-sizing: border-box;
      font-size: 62.5%;      
- }
-    
+ }    
  *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -30,6 +28,7 @@ a {
 }
 
 /** Navbar **/
+
 .marca-central{     
     color: var(--Secundario); 
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);             
@@ -49,18 +48,15 @@ a {
 .navbar {
     background-color: var(--texto);
 }
-
 .navbar-nav a{
     color: var(--Secundario) !important;
     letter-spacing: 1px;
     border-bottom: 1px solid rgb(207, 203, 203);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); 
 }
-
 .navbar-nav .nav-link:hover{
     text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);     
 }
-
 .logo{
     width: 10%; 
     height: 10%; 
@@ -71,31 +67,25 @@ a {
     margin-left: 6%;
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5);         
 }
-
 .logo:hover{
     box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.5);
 }
-
 .menu{    
     background-color: #333;
 }
-
 .dropdown-item{
     font-size:large;          
 }
-
 .dropdown-item:hover{
     color: #333 !important;
     background-color:#98EECC;
     text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
 }
-
 .skate-box{
     width: 100%; 
     overflow: visible; 
     position: relative;
 }
-
 .logo-skate{
     width: 15%; 
     height: auto;
@@ -119,21 +109,17 @@ slide-right{
     background-color: #FFFFFF;
     box-shadow:0px 5px 15px 0px rgb(187, 184, 184);     
 }
-
 .card-productos .card-body{ 
     padding-bottom: 8px;   
     border-top: 1px solid rgb(232, 219, 219);
 }
-
 .card-productos:hover{          
     box-shadow:0px 5px 15px 0px gray;
 }
-
 .card-productos small{
     font-size: 1.5rem ;
     color: #00a650;
 }
-
 .price{
     font-size: 1.9rem;
     margin-right: 3%;
@@ -159,7 +145,6 @@ footer{
     padding: 5px 0;
     margin-top: 20px;    
 }
-
 .nosotros,
 .product,
 .social {
@@ -167,39 +152,32 @@ footer{
   padding: 0;
   margin: 0;  
 }
-
 footer a{
     color: var(--Secundario);
 }
-
 .social svg{
     color: var(--Secundario);
     margin: 10px; 
     transition: 0.4s;         
 }
-
 footer a:hover{
     color: var(--texto);
 }
-
 .social svg:hover{
     transform: scale(1.2);
     color: var(--texto);
 }
-
 footer li{    
     margin-bottom: 30px;
     font-size: large;
     text-align: center;
 }
-
 footer p{
     font-size: x-large;
     text-align: center;
     margin-top: 2vh;
     border-bottom: 1px solid gray;
 }
-
 .p-footer{    
     text-align: center; 
     font-size: large;  
@@ -207,14 +185,17 @@ footer p{
 
 /** Media Querys **/
 
-@media (max-width: 768px) {   
+@media (max-width: 768px) { 
+    .navbar-toggler{
+        margin-right: 4%;
+    }      
     .skate-box {
         display: none;
     }    
     .social svg{
         width: 11%;         
         height: 11%;
-     }   
+    }   
     .productos{
         width: 80%;
         margin: 0 auto;
@@ -236,7 +217,11 @@ footer p{
     }   
     .title-social{
         display: none;
-    }       
+    }  
+    .social svg{      
+        width: 10%;         
+        height: 10%;
+    }      
 }
 
 @media (max-width: 480px) {
@@ -245,7 +230,7 @@ footer p{
         height: 15%;
     }
     .marca-responsive{        
-        font-size:larger;
+        font-size:large;
     }    
     .social svg{      
        width: 22%;         
@@ -262,7 +247,7 @@ footer p{
         height: 18%; 
     }
     .marca-responsive{
-        font-size: 20px;
+        font-size: 80%;
     } 
     .productos{
         margin-top: 8%;
@@ -271,7 +256,7 @@ footer p{
         margin: 7px;
         width: 20%;         
         height: 20%;
-     }     
+    }     
 }
 @media (max-width: 320px) {
     .logo{
@@ -279,10 +264,11 @@ footer p{
         height: 20%;
     }
     .marca-responsive{
-        font-size: 16px;
+        font-size: 15px;
     }    
     .social svg{
-        width: 10%;
+        width: 17%;
+        height: 17%;
         margin-bottom: 20px;        
     }
     .p-footer{

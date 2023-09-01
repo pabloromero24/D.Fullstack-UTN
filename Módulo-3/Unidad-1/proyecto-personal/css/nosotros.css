@@ -9,16 +9,13 @@
     --fuentePrincipal:'Roboto Slab', sans-serif;
     --fuenteSecundaria: 'Barriecito', cursive;   
     }
-
 html {
      box-sizing: border-box;
      font-size: 62.5%;      
- }
-    
+ }    
  *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {    
     background-color: var(--Primario);    
     font-size: 2rem;
@@ -43,7 +40,6 @@ a {
 .navbar-nav .nav-link:hover{
     text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);     
 }
-
 .logo{
     width: 10%; 
     height: 10%; 
@@ -54,19 +50,15 @@ a {
     margin-left: 6%;
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5);         
 }
-
 .logo:hover{
     box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.5);
 }
-
 .menu{    
     background-color: #333;
 }
-
 .dropdown-item{
     font-size:large;          
 }
-
 .dropdown-item:hover{
     color: #333 !important;
     background-color:#98EECC;
@@ -109,6 +101,7 @@ slide-right{
 }
 
 /** Section Imagen Central**/
+
 .img-central{
     margin-top: 8%;
 }
@@ -176,7 +169,6 @@ footer{
     padding: 5px 0;
     margin-top: 20px;    
 }
-
 .nosotros,
 .product,
 .social {
@@ -184,44 +176,38 @@ footer{
   padding: 0;
   margin: 0;  
 }
-
 footer a{
     color: var(--Secundario);
 }
-
 .social svg{
     margin: 10px; 
     transition: 0.4s;         
 }
-
 footer a:hover{
     color: var(--texto);
 }
-
 .social svg:hover{
     transform: scale(1.2);
     color: var(--texto);
 }
-
 footer li{    
     margin-bottom: 30px;
     font-size: large;
     text-align: center;
 }
-
 footer p{
     font-size: x-large;
     text-align: center;
     margin-top: 2vh;
     border-bottom: 1px solid gray;
 }
-
 .p-footer{    
     text-align: center; 
     font-size: large;  
 }
 
 /** Media Querys **/
+
 @media (max-width: 1150px) {  
     .navbar-toggler{
         margin-right: 4%;
