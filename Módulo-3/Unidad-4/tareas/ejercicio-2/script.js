@@ -10,7 +10,7 @@ function contarCaracteres() {
   contador.textContent = caracteresEscritos;
 }
 
-actualizarContador();
+contarCaracteres();
 
 
 
